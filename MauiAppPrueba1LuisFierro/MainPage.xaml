@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppPrueba1LuisFierro.MainPage"
+             Title="CRUD Personas Prueba Luis Fierro ">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,20" Spacing="20">
+
+            <Label Text="Registro de Personas" FontSize="26" HorizontalOptions="Center" FontAttributes="Bold" />
+
+            <Label Text="Cédula" />
+            <Entry x:Name="CedulaEntry" Placeholder="Ingrese el número de cédula" Keyboard="Numeric" />
+
+            <Label Text="Nombres" />
+            <Entry x:Name="NombresEntry" Placeholder="Ingrese los nombres" />
+
+            <Label Text="Apellidos" />
+            <Entry x:Name="ApellidosEntry" Placeholder="Ingrese los apellidos" />
+
+            <Label Text="Correo Electrónico" />
+            <Entry x:Name="CorreoEntry" Placeholder="ejemplo@correo.com" Keyboard="Email" />
+
+            <Label Text="Número de Teléfono" />
+            <Entry x:Name="TelefonoEntry" Placeholder="Ej: 099xxxxxxx" Keyboard="Telephone" />
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,15,0,0">
+                
+                <Button x:Name="cmdCrear" Text="Crear" Clicked="cmdCrear_Clicked"  />
+                
+                <Button x:Name="cmdLeer" Text="Leer/Buscar" Clicked="cmdLeer_Clicked"  />
+                
+                <Button x:Name="cmdActualizar" Text="Actualizar" Clicked="cmdActualizar_Clicked"  />
+                
+                <Button x:Name="cmdEliminar" Text="Eliminar" Clicked="cmdEliminar_Clicked" />
+                
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
